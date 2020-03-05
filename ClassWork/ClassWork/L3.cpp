@@ -1,6 +1,6 @@
 #include "stdafx.h"
 #include <iostream>
-#include <time.h>
+#include <malloc.h>
 using namespace std;
 
 void print(double** matr) {
