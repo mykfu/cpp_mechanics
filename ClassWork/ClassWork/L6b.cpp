@@ -65,7 +65,10 @@ int compare(string& str1, string& str2) {
 		char c2 = tolower(str2.at(k));
 
 		if (c1 == 'ё') {
-			if (c2 == 'ё') return 0;
+			if (c2 == 'ё') {
+				k++;
+				continue;
+			}
 			if (c2 == 'е') return 1;
 			c1 = 'е';
 		}
@@ -170,8 +173,8 @@ void game(string in, string out) {
 
 int main() {
 	setlocale(LC_ALL, "Russian");
-	string in = "стук";
-	string out = "слон";
+	string in = "джип";
+	string out = "аист";
 	//print(generateWords(in));
 
 	game(in, out);
