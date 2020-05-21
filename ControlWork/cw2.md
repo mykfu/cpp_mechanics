@@ -38,6 +38,10 @@ LinkedIntList *list2 = list.removeAlternating();
 Реализовать алгоритм quickSort для структуры `LinkedIntList`.
 
 ```c++
+int compare (Node *a, Node *b) {
+
+}
+
 void swap(int *a, int *b) {
 
 }
